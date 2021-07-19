@@ -1,15 +1,19 @@
-import React, { Component} from "react";
-import {hot} from "react-hot-loader";
-import "../public/App.css";
+// CheckboxWithLabel.js
+import React, {useState} from 'react';
 
-class App extends Component{
-  render(){
-    return(
-      <div className="App">
-        <h1> Hello, World! </h1>
-      </div>
-    );
-  }
-}
+const CheckboxWithLabel = (props:{labelOn: string, labelOff: string}) => {
+  const [isChecked, setIsChecked] = useState(false);
 
-export default hot(module)(App);
+  const onChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  return (
+    <label>
+      <input type="checkbox" checked={isChecked} onChange={onChange} />
+      {isChecked ? props.labelOn : props.labelOff}
+    </label>
+  );
+};
+
+export default CheckboxWithLabel;
