@@ -13,9 +13,10 @@
     - jestを使った単体テスト
     - TS公式
         - https://typescript-jp.gitbook.io/deep-dive/intro-1/jest
-        - 
     - Jest公式
         - https://jestjs.io/blog/2019/01/25/jest-24-refreshing-polished-typescript-friendly#typescript-support
+        - reactテスト
+            - https://jestjs.io/ja/docs/tutorial-react#react-testing-library
     - ソースマップ(sourcemap)
         ```
          CoffeeScript や TypeScript のような言語からコンパイルするように、ページで実行する JavaScript が機械生成されることがあります。
@@ -25,4 +26,5 @@
     - ts-jestは型チェックも行う
     - cssモジュールをインポートしてるとエラー
         - https://jestjs.io/ja/docs/webpack#css%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AE%E3%83%A2%E3%83%83%E3%82%AF
+    - https://jestjs.io/docs/configuration#testenvironment-string
     
